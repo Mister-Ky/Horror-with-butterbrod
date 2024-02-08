@@ -1,0 +1,3 @@
+topmodes
+res://mods/first/scene.tscn | SCENE
+res://mods/first/scr.gd | GDSCRIPT | /root/ModSystem

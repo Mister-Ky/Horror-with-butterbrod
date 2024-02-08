@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/cube.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/key.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/rama.tscn" type="PackedScene" id=4]
+[ext_resource path="res://data/2d/decorative_images/imagebkfpic.png" type="Texture" id=5]
+
+[node name="house" type="Spatial"]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( -0.612562, 0.790423, -4.27738e-07, -0.684402, -0.530398, 0.500272, 0.395426, 0.306448, 0.865868, 0, 0, 0 )
+visible = false
+
+[node name="cube1" parent="." instance=ExtResource( 1 )]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 0, 0, 0 )
+
+[node name="door" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.55454, 0.995117, 59.3596 )
+requiredKey = "3524"
+
+[node name="key" parent="." instance=ExtResource( 3 )]
+transform = Transform( -8.74228e-09, -0.2, 0, 0.2, -8.74228e-09, 0, 0, 0, 0.2, 11.3627, 1.14797, 54.2196 )
+key = "3524"
+
+[node name="rama" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.64189, 6.92373, 57.8212 )
+image_texture = ExtResource( 5 )
+
+[node name="cube2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 28.0795, 0, 0, 0, 18.5342, 0, 0, 0, 1, -29.5077, 17.7511, 58.8502 )
+
+[node name="cube3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 28.0795, 0, 0, 0, 18.5342, 0, 0, 0, 1, 30.6573, 17.7511, 58.8502 )
+
+[node name="cube4" parent="." instance=ExtResource( 1 )]
+transform = Transform( 3.16418, 0, 0, 0, 13.3948, 0, 0, 0, 1, 0.278715, 22.4053, 58.8502 )

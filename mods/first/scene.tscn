@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/tree.tscn" type="PackedScene" id=1]
+
+[node name="testmod" type="Spatial"]
+
+[node name="tree" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.854557, 0.502949, -0.129518, -0.343437, 0.734314, 0.58552, 0.389594, -0.455879, 0.800245, 0, 20.0127, 0 )
