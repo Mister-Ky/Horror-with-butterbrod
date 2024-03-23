@@ -1,5 +1,6 @@
 shader_type canvas_item;
 
+// USING https://disk.yandex.ru/d/r-GuhpJQkr3TfQ
 // USING https://www.shadertoy.com/view/XtBXDw (base on it)
 
 uniform float iTime;
